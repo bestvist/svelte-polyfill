@@ -1,0 +1,43 @@
+{
+  "name": "svelte-polyfill",
+  "version": "0.0.1",
+  "description": "A polyfill for svelte",
+  "main": "dist/svelte-polyfill.umd.js",
+  "scripts": {
+    "start": "sirv test/public",
+    "build": "rollup -c",
+    "test": "rollup -w -c test/rollup.config.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bestvist/svelte-polyfill"
+  },
+  "keywords": [
+    "svelte",
+    "polyfill"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ],
+  "author": "sunzhipeng",
+  "license": "MIT",
+  "dependencies": {
+    "classlist.js": "^1.1.20150312",
+    "core-js": "^3.6.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "sirv-cli": "^0.4.5",
+    "svelte": "^3.0.0"
+  }
+}
